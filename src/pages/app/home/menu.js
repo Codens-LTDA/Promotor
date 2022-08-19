@@ -35,11 +35,11 @@ const Menu = ({ navigation }) => {
 				<TouchableOpacity style={styles.touchb1} onPress={Readbox}>
 					<View style={styles.containerbt}>
 						<View style={styles.container1bt}>
-							<FontAwesomeIcon icon={faBoxOpen} style={styles.iconmenu} size={32} />
+							<FontAwesomeIcon icon={faBoxOpen} style={styles.iconmenu} size={37} />
 						</View>
 						<View style={styles.container2bt}>
-							<Text style={styles.texttouch}>Montar</Text>
-							<Text style={styles.textlittle}>Leia a caixa</Text>
+							<Text style={styles.texttouchmontar}>Montar</Text>
+							<Text style={styles.textlittlemontar}>Leia a caixa</Text>
 						</View>
 					</View>
 				</TouchableOpacity>
@@ -48,7 +48,7 @@ const Menu = ({ navigation }) => {
 				<TouchableOpacity style={styles.touchb2}  onPress={Returnbox}>
 					<View style={styles.containerbt}>
 						<View style={styles.container1bt2}>
-							<FontAwesomeIcon icon={faBox} style={styles.iconmenu} size={25} />
+							<FontAwesomeIcon icon={faBox} style={styles.iconmenu} size={26} />
 						</View>
 						<View style={styles.container2bt2}>
 							<Text style={styles.texttouch}>Devolver</Text>
@@ -61,10 +61,10 @@ const Menu = ({ navigation }) => {
 				<TouchableOpacity style={styles.touchb2}  onPress={Colect}>
 					<View style={styles.containerbt}>
 						<View style={styles.container1bt2}>
-							<FontAwesomeIcon icon={faTruck} style={styles.iconmenu} size={26} />
+							<FontAwesomeIcon icon={faTruck} style={styles.iconmenu} size={30} />
 						</View>
 						<View style={styles.container2bt2}>
-							<Text style={styles.texttouch}>Coletas</Text>
+							<Text style={styles.texttouchcoletas}>Coletas</Text>
 							<Text style={styles.textlittle}></Text>
 						</View>
 					</View>
@@ -117,7 +117,8 @@ const styles = StyleSheet.create({
 	container1bt: {
 		alignItems: 'flex-start',
 		width: '27%',
-		marginLeft: 25,
+		marginLeft: 4,
+		marginTop: 3,
 		justifyContent: 'center',
 	},
 	container2bt: {
@@ -145,11 +146,30 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		marginLeft: 5,
 	},
+	texttouchmontar: {
+		color: Colors.white,
+		fontWeight: 'bold',
+		fontSize: 16,
+		marginLeft: 6,
+	},
+	texttouchcoletas: {
+		color: Colors.white,
+		fontWeight: 'bold',
+		fontSize: 16,
+		marginLeft: 7,
+		marginTop: 10
+	},	
 	textlittle: {
 		fontSize: 11,
 		color: Colors.white,
 		marginTop: -5,
 		marginLeft: 5,		
+	},
+	textlittlemontar:{
+		fontSize: 11,
+		color: Colors.white,
+		marginTop: -5,
+		marginLeft: 6,				
 	}
 });
 

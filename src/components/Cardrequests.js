@@ -31,7 +31,6 @@ const Cardrequests = ({ data, refreshing, index }) => {
             app_origin: 'react',
             number: number,
             check: check,
-
         }).then((res) => {
             if (request === true){
                 showMessage({
@@ -52,7 +51,6 @@ const Cardrequests = ({ data, refreshing, index }) => {
             });
         });
     }
-
 
     return (
         <View key={index} style={styles.containerrequest}>
