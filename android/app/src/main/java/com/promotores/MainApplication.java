@@ -1,4 +1,4 @@
-package com.promotores;
+package com.promotores2;
 
 import android.app.Application;
 import android.content.Context;
